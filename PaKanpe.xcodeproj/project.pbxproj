@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46DF77E31FF84A6C00A32AFB /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46DF77E21FF84A6C00A32AFB /* sample.mp3 */; };
 		46EFC9B11FF467A00075699A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFC9B01FF467A00075699A /* AppDelegate.swift */; };
 		46EFC9B31FF467A00075699A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EFC9B21FF467A00075699A /* ViewController.swift */; };
 		46EFC9B61FF467A00075699A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46EFC9B41FF467A00075699A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46DF77E21FF84A6C00A32AFB /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 		46EFC9AD1FF467A00075699A /* PaKanpe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaKanpe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EFC9B01FF467A00075699A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46EFC9B21FF467A00075699A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46DF77DF1FF84A3400A32AFB /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				46DF77E21FF84A6C00A32AFB /* sample.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		46EFC9A41FF467A00075699A = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 				46EFC9B71FF467A00075699A /* Assets.xcassets */,
 				46EFC9B91FF467A00075699A /* LaunchScreen.storyboard */,
 				46EFC9BC1FF467A00075699A /* Info.plist */,
+				46DF77DF1FF84A3400A32AFB /* Music */,
 			);
 			path = PaKanpe;
 			sourceTree = "<group>";
@@ -97,6 +108,11 @@
 					46EFC9AC1FF467A00075699A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EFC9BB1FF467A00075699A /* LaunchScreen.storyboard in Resources */,
+				46DF77E31FF84A6C00A32AFB /* sample.mp3 in Resources */,
 				46EFC9B81FF467A00075699A /* Assets.xcassets in Resources */,
 				46EFC9B61FF467A00075699A /* Main.storyboard in Resources */,
 			);
